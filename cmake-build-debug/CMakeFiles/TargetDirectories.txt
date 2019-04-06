@@ -1,0 +1,4 @@
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project_autogen.dir

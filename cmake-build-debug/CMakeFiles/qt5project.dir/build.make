@@ -57,9 +57,9 @@ include CMakeFiles/qt5project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/qt5project.dir/flags.make
 
-ui_mainwindow.h: ../mainwindow.ui
+ui_mainwindow.h: ../gui/mainwindow.ui
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
-	/usr/lib/qt5/bin/uic -o /home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h /home/lukas/CLionProjects/qt5project/mainwindow.ui
+	/usr/lib/qt5/bin/uic -o /home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h /home/lukas/CLionProjects/qt5project/gui/mainwindow.ui
 
 CMakeFiles/qt5project.dir/main.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/main.cpp.o: ../main.cpp
@@ -74,22 +74,35 @@ CMakeFiles/qt5project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/main.cpp -o CMakeFiles/qt5project.dir/main.cpp.s
 
-CMakeFiles/qt5project.dir/mainwindow.cpp.o: CMakeFiles/qt5project.dir/flags.make
-CMakeFiles/qt5project.dir/mainwindow.cpp.o: ../mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qt5project.dir/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/mainwindow.cpp.o -c /home/lukas/CLionProjects/qt5project/mainwindow.cpp
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: CMakeFiles/qt5project.dir/flags.make
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o -c /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
 
-CMakeFiles/qt5project.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/mainwindow.cpp > CMakeFiles/qt5project.dir/mainwindow.cpp.i
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp > CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i
 
-CMakeFiles/qt5project.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/mainwindow.cpp -o CMakeFiles/qt5project.dir/mainwindow.cpp.s
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s
+
+CMakeFiles/qt5project.dir/api/API.cpp.o: CMakeFiles/qt5project.dir/flags.make
+CMakeFiles/qt5project.dir/api/API.cpp.o: ../api/API.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qt5project.dir/api/API.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/API.cpp.o -c /home/lukas/CLionProjects/qt5project/api/API.cpp
+
+CMakeFiles/qt5project.dir/api/API.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/api/API.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/api/API.cpp > CMakeFiles/qt5project.dir/api/API.cpp.i
+
+CMakeFiles/qt5project.dir/api/API.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/api/API.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/api/API.cpp -o CMakeFiles/qt5project.dir/api/API.cpp.s
 
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o: qt5project_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o -c /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
 
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.i: cmake_force
@@ -103,14 +116,16 @@ CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.s: cmake_force
 # Object files for target qt5project
 qt5project_OBJECTS = \
 "CMakeFiles/qt5project.dir/main.cpp.o" \
-"CMakeFiles/qt5project.dir/mainwindow.cpp.o" \
+"CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o" \
+"CMakeFiles/qt5project.dir/api/API.cpp.o" \
 "CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
 
 # External object files for target qt5project
 qt5project_EXTERNAL_OBJECTS =
 
 qt5project: CMakeFiles/qt5project.dir/main.cpp.o
-qt5project: CMakeFiles/qt5project.dir/mainwindow.cpp.o
+qt5project: CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o
+qt5project: CMakeFiles/qt5project.dir/api/API.cpp.o
 qt5project: CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o
 qt5project: CMakeFiles/qt5project.dir/build.make
 qt5project: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.9.5
@@ -119,7 +134,7 @@ qt5project: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
 qt5project: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 qt5project: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 qt5project: CMakeFiles/qt5project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable qt5project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable qt5project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qt5project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

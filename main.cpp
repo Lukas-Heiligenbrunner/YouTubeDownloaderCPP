@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QPushButton>
 
-#include "mainwindow.h"
+#include "gui/mainwindow.h"
 
 using namespace std;
 

@@ -30,10 +30,10 @@ set(TARGET ${CMAKE_PROJECT_NAME})
 
 set(SOURCES
         main.cpp
-        mainwindow.cpp)
+        gui/mainwindow.cpp api/API.cpp api/API.h)
 
 set(UI_SOURCES
-        mainwindow.ui
+        gui/mainwindow.ui
         )
 
 #

@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/lukas/CLionProjects/qt5project/mainwindow.cpp
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/DMHXEJ42XS/moc_mainwindow.cpp
+../../../gui/mainwindow.h
+/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
+DMHXEJ42XS/moc_mainwindow.cpp
+/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/DMHXEJ42XS/moc_mainwindow.cpp
+
+/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
 iostream
 -
 mainwindow.h
-/home/lukas/CLionProjects/qt5project/mainwindow.h
+/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
 ui_mainwindow.h
-/home/lukas/CLionProjects/qt5project/ui_mainwindow.h
+/home/lukas/CLionProjects/qt5project/gui/ui_mainwindow.h
 
-/home/lukas/CLionProjects/qt5project/mainwindow.h
+/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
 QMainWindow
 -
+
+/home/lukas/CLionProjects/qt5project/main.cpp
+QApplication
+-
+QPushButton
+-
+gui/mainwindow.h
+/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 qvariant.h

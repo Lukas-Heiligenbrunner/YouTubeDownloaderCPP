@@ -136,6 +136,60 @@ qt5project_autogen/fast:
 	$(MAKE) -f CMakeFiles/qt5project_autogen.dir/build.make CMakeFiles/qt5project_autogen.dir/build
 .PHONY : qt5project_autogen/fast
 
+api/API.o: api/API.cpp.o
+
+.PHONY : api/API.o
+
+# target to build an object file
+api/API.cpp.o:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/API.cpp.o
+.PHONY : api/API.cpp.o
+
+api/API.i: api/API.cpp.i
+
+.PHONY : api/API.i
+
+# target to preprocess a source file
+api/API.cpp.i:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/API.cpp.i
+.PHONY : api/API.cpp.i
+
+api/API.s: api/API.cpp.s
+
+.PHONY : api/API.s
+
+# target to generate assembly for a file
+api/API.cpp.s:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/API.cpp.s
+.PHONY : api/API.cpp.s
+
+gui/mainwindow.o: gui/mainwindow.cpp.o
+
+.PHONY : gui/mainwindow.o
+
+# target to build an object file
+gui/mainwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o
+.PHONY : gui/mainwindow.cpp.o
+
+gui/mainwindow.i: gui/mainwindow.cpp.i
+
+.PHONY : gui/mainwindow.i
+
+# target to preprocess a source file
+gui/mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i
+.PHONY : gui/mainwindow.cpp.i
+
+gui/mainwindow.s: gui/mainwindow.cpp.s
+
+.PHONY : gui/mainwindow.s
+
+# target to generate assembly for a file
+gui/mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s
+.PHONY : gui/mainwindow.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -162,33 +216,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-mainwindow.o: mainwindow.cpp.o
-
-.PHONY : mainwindow.o
-
-# target to build an object file
-mainwindow.cpp.o:
-	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/mainwindow.cpp.o
-.PHONY : mainwindow.cpp.o
-
-mainwindow.i: mainwindow.cpp.i
-
-.PHONY : mainwindow.i
-
-# target to preprocess a source file
-mainwindow.cpp.i:
-	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/mainwindow.cpp.i
-.PHONY : mainwindow.cpp.i
-
-mainwindow.s: mainwindow.cpp.s
-
-.PHONY : mainwindow.s
-
-# target to generate assembly for a file
-mainwindow.cpp.s:
-	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/mainwindow.cpp.s
-.PHONY : mainwindow.cpp.s
 
 qt5project_autogen/mocs_compilation.o: qt5project_autogen/mocs_compilation.cpp.o
 
@@ -227,12 +254,15 @@ help:
 	@echo "... qt5project"
 	@echo "... edit_cache"
 	@echo "... qt5project_autogen"
+	@echo "... api/API.o"
+	@echo "... api/API.i"
+	@echo "... api/API.s"
+	@echo "... gui/mainwindow.o"
+	@echo "... gui/mainwindow.i"
+	@echo "... gui/mainwindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mainwindow.o"
-	@echo "... mainwindow.i"
-	@echo "... mainwindow.s"
 	@echo "... qt5project_autogen/mocs_compilation.o"
 	@echo "... qt5project_autogen/mocs_compilation.i"
 	@echo "... qt5project_autogen/mocs_compilation.s"

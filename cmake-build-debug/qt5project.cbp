@@ -124,22 +124,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/API.cpp">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/API.h">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp">
 			<Option target="qt5project"/>
 		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h">
 			<Option target="qt5project"/>
 		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.h">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.ui">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/main.cpp">
-			<Option target="qt5project"/>
-		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/qt5project/mainwindow.cpp">
-			<Option target="qt5project"/>
-		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/qt5project/mainwindow.h">
-			<Option target="qt5project"/>
-		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/qt5project/mainwindow.ui">
 			<Option target="qt5project"/>
 		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/CMakeLists.txt">

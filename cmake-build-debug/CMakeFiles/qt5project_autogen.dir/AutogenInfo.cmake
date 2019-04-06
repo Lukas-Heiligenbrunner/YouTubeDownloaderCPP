@@ -11,8 +11,8 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen")
 set(AM_INCLUDE_DIR "/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/include")
 # Files
-set(AM_SOURCES "/home/lukas/CLionProjects/qt5project/main.cpp;/home/lukas/CLionProjects/qt5project/mainwindow.cpp")
-set(AM_HEADERS "")
+set(AM_SOURCES "/home/lukas/CLionProjects/qt5project/api/API.cpp;/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp;/home/lukas/CLionProjects/qt5project/main.cpp")
+set(AM_HEADERS "/home/lukas/CLionProjects/qt5project/api/API.h")
 set(AM_SETTINGS_FILE "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenOldSettings.txt")
 # Qt
 set(AM_QT_VERSION_MAJOR 5)

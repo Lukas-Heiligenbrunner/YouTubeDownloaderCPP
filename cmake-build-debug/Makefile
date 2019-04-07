@@ -217,6 +217,33 @@ api/YouTubeToLink.cpp.s:
 	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s
 .PHONY : api/YouTubeToLink.cpp.s
 
+download/DownloadManager.o: download/DownloadManager.cpp.o
+
+.PHONY : download/DownloadManager.o
+
+# target to build an object file
+download/DownloadManager.cpp.o:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o
+.PHONY : download/DownloadManager.cpp.o
+
+download/DownloadManager.i: download/DownloadManager.cpp.i
+
+.PHONY : download/DownloadManager.i
+
+# target to preprocess a source file
+download/DownloadManager.cpp.i:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/download/DownloadManager.cpp.i
+.PHONY : download/DownloadManager.cpp.i
+
+download/DownloadManager.s: download/DownloadManager.cpp.s
+
+.PHONY : download/DownloadManager.s
+
+# target to generate assembly for a file
+download/DownloadManager.cpp.s:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/download/DownloadManager.cpp.s
+.PHONY : download/DownloadManager.cpp.s
+
 gui/mainwindow.o: gui/mainwindow.cpp.o
 
 .PHONY : gui/mainwindow.o
@@ -317,6 +344,9 @@ help:
 	@echo "... api/YouTubeToLink.o"
 	@echo "... api/YouTubeToLink.i"
 	@echo "... api/YouTubeToLink.s"
+	@echo "... download/DownloadManager.o"
+	@echo "... download/DownloadManager.i"
+	@echo "... download/DownloadManager.s"
 	@echo "... gui/mainwindow.o"
 	@echo "... gui/mainwindow.i"
 	@echo "... gui/mainwindow.s"

@@ -3,6 +3,7 @@
 #include <datatypes/Hashmap.h>
 #include <api/YouTube.h>
 #include <api/YouTubeToLink.h>
+#include <download/DownloadManager.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -36,5 +37,10 @@ void MainWindow::startdownloadBtn() {
     YouTubeToLink yttl;
     std::string link = yttl.getDownloadLink(id);
     std::cout << link <<" \n";
+
+    DownloadManager manager;
+    manager.downloadUrl(link);
+    std::cout  <<"finished downloading \n";
+
 
 }

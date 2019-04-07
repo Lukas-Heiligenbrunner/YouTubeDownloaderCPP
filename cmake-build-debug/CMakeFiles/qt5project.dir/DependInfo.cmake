@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lukas/CLionProjects/qt5project/api/API.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/api/API.cpp.o"
   "/home/lukas/CLionProjects/qt5project/api/YouTube.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/api/YouTube.cpp.o"
   "/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o"
+  "/home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o"
   "/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o"
   "/home/lukas/CLionProjects/qt5project/main.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/main.cpp.o"
   "/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp" "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"

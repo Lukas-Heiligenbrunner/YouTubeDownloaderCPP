@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/qt5project.dir/api/API.cpp.o"
   "CMakeFiles/qt5project.dir/api/YouTube.cpp.o"
   "CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o"
+  "CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o"
   "CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
   "qt5project.pdb"
   "qt5project"

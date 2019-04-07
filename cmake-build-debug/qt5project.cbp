@@ -154,6 +154,12 @@
 		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/json.h">
 			<Option target="qt5project"/>
 		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/download/DownloadManager.h">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp">
 			<Option target="qt5project"/>
 		</Unit>

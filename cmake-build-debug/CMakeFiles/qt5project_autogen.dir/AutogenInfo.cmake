@@ -11,8 +11,8 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen")
 set(AM_INCLUDE_DIR "/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/include")
 # Files
-set(AM_SOURCES "/home/lukas/CLionProjects/qt5project/api/API.cpp;/home/lukas/CLionProjects/qt5project/api/YouTube.cpp;/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp;/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp;/home/lukas/CLionProjects/qt5project/main.cpp")
-set(AM_HEADERS "/home/lukas/CLionProjects/qt5project/api/API.h;/home/lukas/CLionProjects/qt5project/api/YouTube.h;/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h;/home/lukas/CLionProjects/qt5project/datatypes/Hashmap.h;/home/lukas/CLionProjects/qt5project/datatypes/json.h")
+set(AM_SOURCES "/home/lukas/CLionProjects/qt5project/api/API.cpp;/home/lukas/CLionProjects/qt5project/api/YouTube.cpp;/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp;/home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp;/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp;/home/lukas/CLionProjects/qt5project/main.cpp")
+set(AM_HEADERS "/home/lukas/CLionProjects/qt5project/api/API.h;/home/lukas/CLionProjects/qt5project/api/YouTube.h;/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h;/home/lukas/CLionProjects/qt5project/datatypes/Hashmap.h;/home/lukas/CLionProjects/qt5project/datatypes/json.h;/home/lukas/CLionProjects/qt5project/download/DownloadManager.h")
 set(AM_SETTINGS_FILE "/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenOldSettings.txt")
 # Qt
 set(AM_QT_VERSION_MAJOR 5)

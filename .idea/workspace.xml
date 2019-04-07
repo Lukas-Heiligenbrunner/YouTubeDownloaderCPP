@@ -16,22 +16,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="added youtube class for querying youtube">
-      <change afterPath="$PROJECT_DIR$/api/YouTubeToLink.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/YouTubeToLink.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datatypes/json.h" afterDir="false" />
+    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="added github library to interpret json code&#10;added Youtubetolink class">
+      <change afterPath="$PROJECT_DIR$/download/DownloadManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/download/DownloadManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/YouTube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/api/YouTube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/YouTube.h" beforeDir="false" afterPath="$PROJECT_DIR$/api/YouTube.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/API.h" beforeDir="false" afterPath="$PROJECT_DIR$/api/API.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake" afterDir="false" />
@@ -61,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            <state relative-caret-position="285">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -73,36 +68,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datatypes/Hashmap.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="315">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
-                <element signature="e#100#119#0" expanded="true" />
-                <element signature="e#148#179#0" expanded="true" />
-                <element signature="e#381#413#0" expanded="true" />
-                <element signature="e#571#603#0" expanded="true" />
-                <element signature="e#705#737#0" expanded="true" />
-                <element signature="e#866#898#0" expanded="true" />
+                <element signature="e#40#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +83,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/API.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="526">
+              <caret line="68" column="66" lean-forward="true" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+              <folding>
+                <element signature="e#40#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,10 +95,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/API.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#92#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datatypes/Hashmap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#100#119#0" expanded="true" />
+                <element signature="e#148#179#0" expanded="true" />
+                <element signature="e#381#413#0" expanded="true" />
+                <element signature="e#571#603#0" expanded="true" />
+                <element signature="e#705#737#0" expanded="true" />
+                <element signature="e#866#898#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/datatypes/json.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="736" column="32" lean-forward="true" selection-start-line="736" selection-start-column="32" selection-end-line="736" selection-end-column="32" />
+              <caret line="736" column="32" selection-start-line="736" selection-start-column="32" selection-end-line="736" selection-end-column="32" />
               <folding>
                 <element signature="e#93#111#0" expanded="true" />
                 <element signature="e#2017#2037#0" expanded="true" />
@@ -196,18 +206,20 @@
         <option value="$PROJECT_DIR$/mainwindow.ui" />
         <option value="$PROJECT_DIR$/mainwindow.cpp" />
         <option value="$PROJECT_DIR$/datatypes/Hashmap.cpp" />
-        <option value="$PROJECT_DIR$/datatypes/Hashmap.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/api/API.cpp" />
-        <option value="$PROJECT_DIR$/api/API.h" />
         <option value="$PROJECT_DIR$/api/YouTube.h" />
         <option value="$PROJECT_DIR$/api/YouTube.cpp" />
         <option value="$PROJECT_DIR$/api/YouTubeToLink.h" />
         <option value="$PROJECT_DIR$/datatypes/json.cpp" />
         <option value="$PROJECT_DIR$/datatypes/json.h" />
         <option value="$PROJECT_DIR$/api/YouTubeToLink.cpp" />
+        <option value="$PROJECT_DIR$/datatypes/Hashmap.h" />
         <option value="$PROJECT_DIR$/gui/mainwindow.cpp" />
+        <option value="$PROJECT_DIR$/api/API.h" />
+        <option value="$PROJECT_DIR$/api/API.cpp" />
+        <option value="$PROJECT_DIR$/download/DownloadManager.h" />
+        <option value="$PROJECT_DIR$/download/DownloadManager.cpp" />
       </list>
     </option>
   </component>
@@ -243,6 +255,11 @@
               <item name="qt5project" type="b2602c69:ProjectViewProjectNode" />
               <item name="qt5project" type="462c0819:PsiDirectoryNode" />
               <item name="datatypes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qt5project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qt5project" type="462c0819:PsiDirectoryNode" />
+              <item name="download" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="qt5project" type="b2602c69:ProjectViewProjectNode" />
@@ -313,7 +330,7 @@
       <workItem from="1554542667316" duration="6140000" />
       <workItem from="1554550034763" duration="3301000" />
       <workItem from="1554624579941" duration="5738000" />
-      <workItem from="1554647433098" duration="12012000" />
+      <workItem from="1554647433098" duration="14712000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1554551336200</created>
@@ -364,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554653562832</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added github library to interpret json code&#10;added Youtubetolink class">
+      <created>1554660927203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554660927203</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27191000" />
+    <option name="totallyTimeSpent" value="29891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
@@ -379,15 +403,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46851653" visible="true" weight="0.33582887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4578442" visible="true" weight="0.33582887" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32916668" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.46531484" weight="0.31016043" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.45464247" weight="0.31016043" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5314835" side_tool="true" visible="true" weight="0.33582887" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5421558" side_tool="true" visible="true" weight="0.33582887" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49733192" weight="0.32916668" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -404,7 +428,8 @@
     <MESSAGE value="added post and get method to api class and created hashmap" />
     <MESSAGE value="finished api post request" />
     <MESSAGE value="added youtube class for querying youtube" />
-    <option name="LAST_COMMIT_MESSAGE" value="added youtube class for querying youtube" />
+    <MESSAGE value="added github library to interpret json code&#10;added Youtubetolink class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added github library to interpret json code&#10;added Youtubetolink class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/include/qt/QtWidgets/QMainWindow" />
@@ -456,12 +481,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/API.h">
+    <entry file="file://$PROJECT_DIR$/datatypes/json.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="250">
+          <caret line="529" column="51" selection-end-line="763" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datatypes/Hashmap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#92#109#0" expanded="true" />
+            <element signature="e#100#119#0" expanded="true" />
+            <element signature="e#148#179#0" expanded="true" />
+            <element signature="e#381#413#0" expanded="true" />
+            <element signature="e#571#603#0" expanded="true" />
+            <element signature="e#705#737#0" expanded="true" />
+            <element signature="e#866#898#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,34 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/API.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/YouTube.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#40#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datatypes/json.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="529" column="51" selection-end-line="763" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datatypes/json.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="736" column="32" lean-forward="true" selection-start-line="736" selection-start-column="32" selection-end-line="736" selection-end-column="32" />
+          <caret line="736" column="32" selection-start-line="736" selection-start-column="32" selection-end-line="736" selection-end-column="32" />
           <folding>
             <element signature="e#93#111#0" expanded="true" />
             <element signature="e#2017#2037#0" expanded="true" />
@@ -520,41 +540,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datatypes/Hashmap.h">
+    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/YouTube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#100#119#0" expanded="true" />
-            <element signature="e#148#179#0" expanded="true" />
-            <element signature="e#381#413#0" expanded="true" />
-            <element signature="e#571#603#0" expanded="true" />
-            <element signature="e#705#737#0" expanded="true" />
-            <element signature="e#866#898#0" expanded="true" />
+            <element signature="e#40#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
+    <entry file="file://$PROJECT_DIR$/api/API.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="526">
+          <caret line="68" column="66" lean-forward="true" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+          <folding>
+            <element signature="e#40#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.cpp">
+    <entry file="file://$PROJECT_DIR$/api/API.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#92#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#57#0" expanded="true" />
           </folding>
         </state>
       </provider>

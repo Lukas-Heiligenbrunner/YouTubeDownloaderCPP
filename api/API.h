@@ -15,7 +15,7 @@ protected:
     std::string request(std::string myurl, bool post, Hashmap<std::string,std::string> &map);
 
 private:
-    static size_t write_data(void *contents, size_t size, size_t nmemb, FILE *stream);
+    static size_t write_data(void *buffer, size_t size, size_t buffersize, FILE *stream);
 };
 
 

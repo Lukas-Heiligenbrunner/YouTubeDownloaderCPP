@@ -5,20 +5,16 @@
 #include "API.h"
 
 #include <string>
-#include <stdio.h>
-
-#include <curl/curl.h>
 #include <iostream>
+
+#include <stdio.h>
+#include <curl/curl.h>
+
 #include <datatypes/Hashmap.h>
 
 std::string API::request(std::string myurl) {
     Hashmap<std::string,std::string> map;
     return request(myurl,false,map);
-}
-
-size_t API::write_data(void *contents, size_t size, size_t nmemb, FILE *stream) {
-    ((std::string*)stream)->append((char*)contents, size * nmemb);
-    return size * nmemb;
 }
 
 std::string API::request(std::string myurl, bool post, Hashmap<std::string,std::string> &map) {
@@ -67,4 +63,9 @@ std::string API::request(std::string myurl, bool post, Hashmap<std::string,std::
         curl_easy_cleanup(curl);
     }
     return readString;
+}
+
+size_t API::write_data(void *contents, size_t size, size_t nmemb, FILE *stream) {
+    ((std::string*)stream)->append((char*)contents, size * nmemb);
+    return size * nmemb;
 }

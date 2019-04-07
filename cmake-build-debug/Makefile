@@ -163,6 +163,33 @@ api/API.cpp.s:
 	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/API.cpp.s
 .PHONY : api/API.cpp.s
 
+api/YouTube.o: api/YouTube.cpp.o
+
+.PHONY : api/YouTube.o
+
+# target to build an object file
+api/YouTube.cpp.o:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTube.cpp.o
+.PHONY : api/YouTube.cpp.o
+
+api/YouTube.i: api/YouTube.cpp.i
+
+.PHONY : api/YouTube.i
+
+# target to preprocess a source file
+api/YouTube.cpp.i:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTube.cpp.i
+.PHONY : api/YouTube.cpp.i
+
+api/YouTube.s: api/YouTube.cpp.s
+
+.PHONY : api/YouTube.s
+
+# target to generate assembly for a file
+api/YouTube.cpp.s:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTube.cpp.s
+.PHONY : api/YouTube.cpp.s
+
 gui/mainwindow.o: gui/mainwindow.cpp.o
 
 .PHONY : gui/mainwindow.o
@@ -257,6 +284,9 @@ help:
 	@echo "... api/API.o"
 	@echo "... api/API.i"
 	@echo "... api/API.s"
+	@echo "... api/YouTube.o"
+	@echo "... api/YouTube.i"
+	@echo "... api/YouTube.s"
 	@echo "... gui/mainwindow.o"
 	@echo "... gui/mainwindow.i"
 	@echo "... gui/mainwindow.s"

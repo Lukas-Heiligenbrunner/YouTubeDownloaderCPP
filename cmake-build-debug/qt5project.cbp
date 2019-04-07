@@ -130,6 +130,12 @@
 		<Unit filename="/home/lukas/CLionProjects/qt5project/api/API.h">
 			<Option target="qt5project"/>
 		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTube.cpp">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTube.h">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp">
 			<Option target="qt5project"/>
 		</Unit>

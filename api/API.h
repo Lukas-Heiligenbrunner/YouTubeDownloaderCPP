@@ -10,7 +10,7 @@
 #include <datatypes/Hashmap.h>
 
 class API {
-public:
+protected:
     std::string request(std::string myurl);
     std::string request(std::string myurl, bool post, Hashmap<std::string,std::string> &map);
 

@@ -11,6 +11,7 @@
 class YouTube : API{
 public:
     std::string searchYouTube(std::string query);
+    std::string firstResultID(std::string keyword);
 
 private:
     static const std::string apikey;

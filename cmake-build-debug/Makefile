@@ -190,6 +190,33 @@ api/YouTube.cpp.s:
 	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTube.cpp.s
 .PHONY : api/YouTube.cpp.s
 
+api/YouTubeToLink.o: api/YouTubeToLink.cpp.o
+
+.PHONY : api/YouTubeToLink.o
+
+# target to build an object file
+api/YouTubeToLink.cpp.o:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o
+.PHONY : api/YouTubeToLink.cpp.o
+
+api/YouTubeToLink.i: api/YouTubeToLink.cpp.i
+
+.PHONY : api/YouTubeToLink.i
+
+# target to preprocess a source file
+api/YouTubeToLink.cpp.i:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.i
+.PHONY : api/YouTubeToLink.cpp.i
+
+api/YouTubeToLink.s: api/YouTubeToLink.cpp.s
+
+.PHONY : api/YouTubeToLink.s
+
+# target to generate assembly for a file
+api/YouTubeToLink.cpp.s:
+	$(MAKE) -f CMakeFiles/qt5project.dir/build.make CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s
+.PHONY : api/YouTubeToLink.cpp.s
+
 gui/mainwindow.o: gui/mainwindow.cpp.o
 
 .PHONY : gui/mainwindow.o
@@ -287,6 +314,9 @@ help:
 	@echo "... api/YouTube.o"
 	@echo "... api/YouTube.i"
 	@echo "... api/YouTube.s"
+	@echo "... api/YouTubeToLink.o"
+	@echo "... api/YouTubeToLink.i"
+	@echo "... api/YouTubeToLink.s"
 	@echo "... gui/mainwindow.o"
 	@echo "... gui/mainwindow.i"
 	@echo "... gui/mainwindow.s"

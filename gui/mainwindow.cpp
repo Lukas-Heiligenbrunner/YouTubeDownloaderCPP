@@ -2,6 +2,7 @@
 #include <api/API.h>
 #include <datatypes/Hashmap.h>
 #include <api/YouTube.h>
+#include <api/YouTubeToLink.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -25,11 +26,15 @@ void MainWindow::startdownloadBtn() {
     std::cout << "buttton clicked!\n";
     ui->progressmanual->setValue(ui->progressmanual->value() + 1);
     std::string string = ui->textfieldname->text().toStdString();
-    std::cout << string << " <<<  \n";
-    std::cout << "starting downloading";
+    std::cout << string << " <<<  \n\n";
+    std::cout << "starting downloading\n\n";
 
     YouTube youtube;
+    std::string id = youtube.firstResultID("fading");
+    std::cout << id <<" \n";
 
+    YouTubeToLink yttl;
+    std::string link = yttl.getDownloadLink(id);
+    std::cout << link <<" \n";
 
-    std::cout << youtube.searchYouTube("fading") <<"finished \n";
 }

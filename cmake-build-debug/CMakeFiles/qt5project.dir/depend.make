@@ -5,8 +5,23 @@ CMakeFiles/qt5project.dir/api/API.cpp.o: ../datatypes/Hashmap.h
 CMakeFiles/qt5project.dir/api/API.cpp.o: ../api/API.cpp
 CMakeFiles/qt5project.dir/api/API.cpp.o: ../api/API.h
 
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../datatypes/Hashmap.h
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../datatypes/json.h
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../api/API.h
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../api/YouTube.cpp
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../api/YouTube.h
+
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../datatypes/Hashmap.h
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../datatypes/json.h
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/API.h
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/YouTubeToLink.cpp
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/YouTubeToLink.h
+
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/API.h
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/YouTube.h
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/YouTubeToLink.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../datatypes/Hashmap.h
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/API.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.cpp
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

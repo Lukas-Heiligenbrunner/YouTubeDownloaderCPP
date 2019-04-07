@@ -31,7 +31,7 @@ set(TARGET ${CMAKE_PROJECT_NAME})
 
 set(SOURCES
         main.cpp
-        gui/mainwindow.cpp api/API.cpp api/API.h datatypes/Hashmap.h api/YouTube.cpp api/YouTube.h)
+        gui/mainwindow.cpp api/API.cpp api/API.h datatypes/Hashmap.h api/YouTube.cpp api/YouTube.h datatypes/json.h api/YouTubeToLink.cpp api/YouTubeToLink.h)
 
 set(UI_SOURCES
         gui/mainwindow.ui

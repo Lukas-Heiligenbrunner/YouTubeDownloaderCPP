@@ -136,6 +136,12 @@
 		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTube.h">
 			<Option target="qt5project"/>
 		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp">
 			<Option target="qt5project"/>
 		</Unit>
@@ -143,6 +149,9 @@
 			<Option target="qt5project"/>
 		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/Hashmap.h">
+			<Option target="qt5project"/>
+		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/json.h">
 			<Option target="qt5project"/>
 		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp">

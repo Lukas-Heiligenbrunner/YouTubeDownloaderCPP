@@ -5,9 +5,24 @@ CMakeFiles/qt5project.dir/api/API.cpp.o
  ..//datatypes/Hashmap.h
  /home/lukas/CLionProjects/qt5project/api/API.cpp
  /home/lukas/CLionProjects/qt5project/api/API.h
+CMakeFiles/qt5project.dir/api/YouTube.cpp.o
+ ..//datatypes/Hashmap.h
+ ..//datatypes/json.h
+ /home/lukas/CLionProjects/qt5project/api/API.h
+ /home/lukas/CLionProjects/qt5project/api/YouTube.cpp
+ /home/lukas/CLionProjects/qt5project/api/YouTube.h
+CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o
+ ..//datatypes/Hashmap.h
+ ..//datatypes/json.h
+ /home/lukas/CLionProjects/qt5project/api/API.h
+ /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp
+ /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o
  ..//api/API.h
+ ..//api/YouTube.h
+ ..//api/YouTubeToLink.h
  ..//datatypes/Hashmap.h
+ ../api/API.h
  /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
  /home/lukas/CLionProjects/qt5project/gui/mainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

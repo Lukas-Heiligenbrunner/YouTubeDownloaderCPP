@@ -2,9 +2,10 @@
 // Created by lukas on 07.04.19.
 //
 
+#include <datatypes/json.h>
 #include "YouTube.h"
 
-static const std::string apikey = "AIzaSyAYIXX7lgATXN2xPSCIK71wNQjgUzmYL0s";
+const std::string YouTube::apikey = "AIzaSyAYIXX7lgATXN2xPSCIK71wNQjgUzmYL0s";
 
 std::string YouTube::searchYouTube(std::string query) {
     Hashmap<std::string,std::string> mymap;
@@ -15,5 +16,18 @@ std::string YouTube::searchYouTube(std::string query) {
     mymap.add("part","snippet");
     mymap.add("key",apikey);
 
-    return request("https://www.googleapis.com/youtube/v3/search",false,mymap);
+    std::string reply = request("https://www.googleapis.com/youtube/v3/search",false,mymap);
+
+
+
+    return reply;
+}
+
+std::string YouTube::firstResultID(std::string keyword) {
+    std::string reply = searchYouTube(keyword);
+    json::JSON obj;
+
+    obj = json::JSON::Load(reply);
+
+    return obj["items"][0]["id"]["videoId"].ToString();
 }

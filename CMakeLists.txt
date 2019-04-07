@@ -22,6 +22,7 @@ find_package(Qt5PrintSupport REQUIRED)
 find_package(Qt5Sql REQUIRED)
 
 set(QT5_LIBRARIES Qt5::Widgets Qt5::PrintSupport Qt5::Sql)
+add_compile_options(-lcurl)
 
 #
 # project main
@@ -52,4 +53,4 @@ add_executable(${TARGET} ${SOURCES} ${UI_GENERATED_HEADERS})
 # `target_link_libraries()` rather than `qt5_use_modules()` for CMake 2.8.11 or later
 # hint from [CMake & QT5 - QT5_WRAP_UI not generating ui header files](http://stackoverflow.com/questions/25875255/cmake-qt5-qt5-wrap-ui-not-generating-ui-header-files)
 #
-target_link_libraries(${TARGET} ${QT5_LIBRARIES})
+target_link_libraries(${TARGET} ${QT5_LIBRARIES} curl)

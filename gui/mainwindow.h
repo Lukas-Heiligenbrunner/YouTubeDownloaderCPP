@@ -18,7 +18,7 @@ public:
 private:
     Ui::MainWindow *ui;
 private slots:
-    void btnclick();
+    void startdownloadBtn();
 };
 
 #endif // MAINWINDOW_H

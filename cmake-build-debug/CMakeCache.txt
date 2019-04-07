@@ -232,6 +232,9 @@ Qt5Sql_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 
+//The directory containing a CMake configuration file for libcurl.
+libcurl_DIR:PATH=libcurl_DIR-NOTFOUND
+
 //Value Computed by CMake
 qt5project_BINARY_DIR:STATIC=/home/lukas/CLionProjects/qt5project/cmake-build-debug
 

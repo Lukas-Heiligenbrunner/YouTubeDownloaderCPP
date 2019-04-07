@@ -10,8 +10,10 @@
 
 class API {
 public:
-    std::string request(std::string url);
+    std::string request(std::string myurl);
 
+private:
+    static size_t write_data(void *contents, size_t size, size_t nmemb, FILE *stream);
 };
 
 

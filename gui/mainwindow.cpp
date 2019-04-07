@@ -1,10 +1,10 @@
 #include <iostream>
+#include <api/API.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
-        QMainWindow(parent),ui(new Ui::MainWindow)
-{
+        QMainWindow(parent), ui(new Ui::MainWindow) {
 
     ui->setupUi(this);
     ui->progressmanual->setMaximum(100);
@@ -12,17 +12,20 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->progressmanual->setValue(10);
 
 
-    connect (ui->btndownloadmanul, SIGNAL( clicked() ), this, SLOT( btnclick() ));
+    connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::btnclick() {
-        std::cout << "buttton clicked!\n";
-        ui->progressmanual->setValue(ui->progressmanual->value()+1);
-        std::string string = ui->textfieldname->text().toStdString();
-        std::cout << string << " <<<  \n";
+void MainWindow::startdownloadBtn() {
+    std::cout << "buttton clicked!\n";
+    ui->progressmanual->setValue(ui->progressmanual->value() + 1);
+    std::string string = ui->textfieldname->text().toStdString();
+    std::cout << string << " <<<  \n";
+    std::cout << "starting downloading";
+    API api;
+    api.request("http://orf.at");
+    std::cout << "finished \n";
 }

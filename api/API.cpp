@@ -36,8 +36,15 @@ std::string API::request(std::string myurl, bool post, Hashmap<std::string,std::
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
 
         if(post){
+            std::string poststring;
+            for (int i = 0; i < map.size(); i++) {
+                poststring+=map.getValue(i)+"="+map.getKey(i);
+                if(i < map.size()-1){
+                    poststring+="&";
+                }
+            }
             curl_easy_setopt(curl, CURLOPT_POST, 1);
-            curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "name=Bjarne&comment=example");
+            curl_easy_setopt(curl, CURLOPT_POSTFIELDS, poststring.c_str());
         }else{
             std::string getstring;
             for(int i =0; i< map.size();i++){
@@ -50,9 +57,7 @@ std::string API::request(std::string myurl, bool post, Hashmap<std::string,std::
             myurl+="?"+getstring;
         }
 
-        const char *url =myurl.c_str();
-        curl_easy_setopt(curl, CURLOPT_URL, url);
-
+        curl_easy_setopt(curl, CURLOPT_URL, myurl.c_str());
 
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readString);

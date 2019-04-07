@@ -1,5 +1,6 @@
 #include <iostream>
 #include <api/API.h>
+#include <datatypes/Hashmap.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -26,6 +27,14 @@ void MainWindow::startdownloadBtn() {
     std::cout << string << " <<<  \n";
     std::cout << "starting downloading";
     API api;
-    api.request("http://orf.at");
+
+    Hashmap<std::string,std::string> mymap;
+    mymap.add("q","ariana%20grande");
+    mymap.add("type","video");
+    mymap.add("maxResults","25");
+    mymap.add("part","snippet");
+    mymap.add("key","AIzaSyAYIXX7lgATXN2xPSCIK71wNQjgUzmYL0s");
+
+    std::cout << api.request("https://www.googleapis.com/youtube/v3/search",false,mymap) << " ------ \n";
     std::cout << "finished \n";
 }

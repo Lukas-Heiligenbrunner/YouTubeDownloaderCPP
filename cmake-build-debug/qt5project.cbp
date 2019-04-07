@@ -136,6 +136,9 @@
 		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h">
 			<Option target="qt5project"/>
 		</Unit>
+		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/Hashmap.h">
+			<Option target="qt5project"/>
+		</Unit>
 		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp">
 			<Option target="qt5project"/>
 		</Unit>

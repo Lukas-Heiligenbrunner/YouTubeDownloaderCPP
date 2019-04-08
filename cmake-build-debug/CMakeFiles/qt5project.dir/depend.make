@@ -17,10 +17,14 @@ CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/API.h
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/YouTubeToLink.cpp
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/YouTubeToLink.h
 
+CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o: ../download/DownloadManager.cpp
+CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o: ../download/DownloadManager.h
+
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/API.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/YouTube.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/YouTubeToLink.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../datatypes/Hashmap.h
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../download/DownloadManager.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../api/API.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.cpp
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.h

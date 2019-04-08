@@ -3,28 +3,32 @@
 
 CMakeFiles/qt5project.dir/api/API.cpp.o
  ..//datatypes/Hashmap.h
- /home/lukas/CLionProjects/qt5project/api/API.cpp
- /home/lukas/CLionProjects/qt5project/api/API.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.h
 CMakeFiles/qt5project.dir/api/YouTube.cpp.o
  ..//datatypes/Hashmap.h
  ..//datatypes/json.h
- /home/lukas/CLionProjects/qt5project/api/API.h
- /home/lukas/CLionProjects/qt5project/api/YouTube.cpp
- /home/lukas/CLionProjects/qt5project/api/YouTube.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.h
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o
  ..//datatypes/Hashmap.h
  ..//datatypes/json.h
- /home/lukas/CLionProjects/qt5project/api/API.h
- /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp
- /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.h
+CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o
  ..//api/API.h
  ..//api/YouTube.h
  ..//api/YouTubeToLink.h
  ..//datatypes/Hashmap.h
+ ..//download/DownloadManager.h
  ../api/API.h
- /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
- /home/lukas/CLionProjects/qt5project/gui/mainwindow.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -177,8 +181,8 @@ CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
  ui_mainwindow.h
 CMakeFiles/qt5project.dir/main.cpp.o
- /home/lukas/CLionProjects/qt5project/gui/mainwindow.h
- /home/lukas/CLionProjects/qt5project/main.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/main.cpp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -293,9 +297,9 @@ CMakeFiles/qt5project.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o
- /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/DMHXEJ42XS/moc_mainwindow.cpp
- /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
- /home/lukas/CLionProjects/qt5project/gui/mainwindow.h
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/DMHXEJ42XS/moc_mainwindow.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
+ /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h

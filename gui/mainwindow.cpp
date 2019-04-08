@@ -4,6 +4,8 @@
 #include <api/YouTube.h>
 #include <api/YouTubeToLink.h>
 #include <download/DownloadManager.h>
+
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -15,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->progressmanual->setMinimum(0);
     ui->progressmanual->setValue(10);
 
-
     connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
 }
 
@@ -26,12 +27,12 @@ MainWindow::~MainWindow() {
 void MainWindow::startdownloadBtn() {
     std::cout << "buttton clicked!\n";
     ui->progressmanual->setValue(ui->progressmanual->value() + 1);
-    std::string string = ui->textfieldname->text().toStdString();
-    std::cout << string << " <<<  \n\n";
+    std::string searchtext = ui->textfieldname->text().toStdString();
+    std::cout << searchtext << " <<<  \n\n";
     std::cout << "starting downloading\n\n";
 
     YouTube youtube;
-    std::string id = youtube.firstResultID("fading");
+    std::string id = youtube.firstResultID(searchtext);
     std::cout << id <<" \n";
 
     YouTubeToLink yttl;
@@ -39,8 +40,9 @@ void MainWindow::startdownloadBtn() {
     std::cout << link <<" \n";
 
     DownloadManager manager;
-    manager.downloadUrl(link);
-    std::cout  <<"finished downloading \n";
-
-
+    manager.addActionListener([](){
+        std::cout << "lambda function called...\n";
+    });
+//    manager.downloadUrl(link,"music.mp3");
+//    std::cout  <<"finished downloading \n";
 }

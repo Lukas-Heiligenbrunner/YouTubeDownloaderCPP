@@ -26,13 +26,35 @@ iostream
 vector
 -
 
+..//download/DownloadManager.h
+functional
+-
+
 ../api/API.h
 string
 -
 datatypes/Hashmap.h
 -
 
-/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp
+string
+-
+curl/curl.h
+-
+iostream
+-
+vector
+-
+functional
+-
+DownloadManager.h
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
+
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
+functional
+-
+
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp
 iostream
 -
 api/API.h
@@ -43,12 +65,14 @@ api/YouTube.h
 -
 api/YouTubeToLink.h
 -
+download/DownloadManager.h
+-
 mainwindow.h
-/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h
 ui_mainwindow.h
-/home/lukas/CLionProjects/qt5project/gui/ui_mainwindow.h
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/ui_mainwindow.h
 
-/home/lukas/CLionProjects/qt5project/gui/mainwindow.h
+/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h
 QMainWindow
 -
 

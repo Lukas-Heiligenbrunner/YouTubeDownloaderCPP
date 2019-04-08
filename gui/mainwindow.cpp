@@ -40,9 +40,10 @@ void MainWindow::startdownloadBtn() {
     std::cout << link <<" \n";
 
     DownloadManager manager;
-    manager.addActionListener([](){
+    manager.addActionListener([this](){
+        ui->progressmanual->setValue(ui->progressmanual->value() + 1);
         std::cout << "lambda function called...\n";
     });
-//    manager.downloadUrl(link,"music.mp3");
-//    std::cout  <<"finished downloading \n";
+    manager.downloadUrl(link,yttl.getFileName()+".mp3");
+    std::cout  <<"finished downloading \n";
 }

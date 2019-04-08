@@ -12,8 +12,14 @@ class YouTubeToLink : API{
 private:
     std::string getDownloadLinkJson(std::string videoid);
 
+    std::string filename;
+    std::string filelength;
+    std::string downloadUrl;
+
+
 public:
     std::string getDownloadLink(std::string videoid);
+    std::string getFileName();
 };
 
 

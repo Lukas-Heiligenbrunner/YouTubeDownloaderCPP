@@ -24,7 +24,7 @@ find_package(Qt5Sql REQUIRED)
 set(QT5_LIBRARIES Qt5::Widgets Qt5::PrintSupport Qt5::Sql)
 add_compile_options(-lcurl)
 
-#
+
 # project main
 #
 set(TARGET ${CMAKE_PROJECT_NAME})

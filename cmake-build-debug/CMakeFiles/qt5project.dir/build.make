@@ -43,10 +43,10 @@ RM = /home/lukas/Downloads/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukas/CLionProjects/YouTubeDownloaderCPP
+CMAKE_SOURCE_DIR = /home/lukas/CLionProjects/qt5project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/lukas/CLionProjects/qt5project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/qt5project.dir/depend.make
@@ -58,99 +58,99 @@ include CMakeFiles/qt5project.dir/progress.make
 include CMakeFiles/qt5project.dir/flags.make
 
 ui_mainwindow.h: ../gui/mainwindow.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
-	/usr/lib/qt5/bin/uic -o /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/ui_mainwindow.h /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
+	/usr/lib/qt5/bin/uic -o /home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h /home/lukas/CLionProjects/qt5project/gui/mainwindow.ui
 
 CMakeFiles/qt5project.dir/main.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qt5project.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/main.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qt5project.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/main.cpp.o -c /home/lukas/CLionProjects/qt5project/main.cpp
 
 CMakeFiles/qt5project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/main.cpp > CMakeFiles/qt5project.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/main.cpp > CMakeFiles/qt5project.dir/main.cpp.i
 
 CMakeFiles/qt5project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/main.cpp -o CMakeFiles/qt5project.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/main.cpp -o CMakeFiles/qt5project.dir/main.cpp.s
 
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: ../gui/mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o -c /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp
 
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp > CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp > CMakeFiles/qt5project.dir/gui/mainwindow.cpp.i
 
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp -o CMakeFiles/qt5project.dir/gui/mainwindow.cpp.s
 
 CMakeFiles/qt5project.dir/api/API.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/api/API.cpp.o: ../api/API.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qt5project.dir/api/API.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/API.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qt5project.dir/api/API.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/API.cpp.o -c /home/lukas/CLionProjects/qt5project/api/API.cpp
 
 CMakeFiles/qt5project.dir/api/API.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/api/API.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.cpp > CMakeFiles/qt5project.dir/api/API.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/api/API.cpp > CMakeFiles/qt5project.dir/api/API.cpp.i
 
 CMakeFiles/qt5project.dir/api/API.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/api/API.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.cpp -o CMakeFiles/qt5project.dir/api/API.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/api/API.cpp -o CMakeFiles/qt5project.dir/api/API.cpp.s
 
 CMakeFiles/qt5project.dir/api/YouTube.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/api/YouTube.cpp.o: ../api/YouTube.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qt5project.dir/api/YouTube.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/YouTube.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qt5project.dir/api/YouTube.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/YouTube.cpp.o -c /home/lukas/CLionProjects/qt5project/api/YouTube.cpp
 
 CMakeFiles/qt5project.dir/api/YouTube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/api/YouTube.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.cpp > CMakeFiles/qt5project.dir/api/YouTube.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/api/YouTube.cpp > CMakeFiles/qt5project.dir/api/YouTube.cpp.i
 
 CMakeFiles/qt5project.dir/api/YouTube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/api/YouTube.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.cpp -o CMakeFiles/qt5project.dir/api/YouTube.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/api/YouTube.cpp -o CMakeFiles/qt5project.dir/api/YouTube.cpp.s
 
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o: ../api/YouTubeToLink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.o -c /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp
 
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.cpp > CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp > CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.i
 
 CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.cpp -o CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp -o CMakeFiles/qt5project.dir/api/YouTubeToLink.cpp.s
 
 CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o: ../download/DownloadManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/download/DownloadManager.cpp.o -c /home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp
 
 CMakeFiles/qt5project.dir/download/DownloadManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/download/DownloadManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp > CMakeFiles/qt5project.dir/download/DownloadManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp > CMakeFiles/qt5project.dir/download/DownloadManager.cpp.i
 
 CMakeFiles/qt5project.dir/download/DownloadManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/download/DownloadManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp -o CMakeFiles/qt5project.dir/download/DownloadManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp -o CMakeFiles/qt5project.dir/download/DownloadManager.cpp.s
 
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o: CMakeFiles/qt5project.dir/flags.make
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o: qt5project_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o -c /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.o -c /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp
 
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp > CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp > CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp -o CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp -o CMakeFiles/qt5project.dir/qt5project_autogen/mocs_compilation.cpp.s
 
 # Object files for target qt5project
 qt5project_OBJECTS = \
@@ -179,7 +179,7 @@ qt5project: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
 qt5project: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 qt5project: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 qt5project: CMakeFiles/qt5project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable qt5project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable qt5project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qt5project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,6 +192,6 @@ CMakeFiles/qt5project.dir/clean:
 .PHONY : CMakeFiles/qt5project.dir/clean
 
 CMakeFiles/qt5project.dir/depend: ui_mainwindow.h
-	cd /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukas/CLionProjects/YouTubeDownloaderCPP /home/lukas/CLionProjects/YouTubeDownloaderCPP /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukas/CLionProjects/qt5project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukas/CLionProjects/qt5project /home/lukas/CLionProjects/qt5project /home/lukas/CLionProjects/qt5project/cmake-build-debug /home/lukas/CLionProjects/qt5project/cmake-build-debug /home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/qt5project.dir/depend
 

@@ -10,6 +10,10 @@ std::string YouTubeToLink::getDownloadLink(std::string videoid) {
 
     json::JSON obj = json::JSON::Load(reply);
 
+    downloadUrl = obj["link"].ToString();
+    filename = obj["title"].ToString();
+    filelength = obj["length"].ToString();
+
     return obj["link"].ToString();
 }
 
@@ -21,4 +25,8 @@ std::string YouTubeToLink::getDownloadLinkJson(std::string videoid) {
 
     std::string reply = request("http://www.convertmp3.io/fetch/",false,mymap);
     return reply;
+}
+
+std::string YouTubeToLink::getFileName() {
+    return filename;
 }

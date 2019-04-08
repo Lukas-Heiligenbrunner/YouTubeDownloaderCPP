@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="qt5project">
-				<Option output="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option output="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -39,9 +39,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_PRINTSUPPORT_LIB"/>
 					<Add option="-DQT_SQL_LIB"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/include"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
@@ -59,15 +59,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="qt5project/fast">
-				<Option output="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option output="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,9 +77,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_PRINTSUPPORT_LIB"/>
 					<Add option="-DQT_SQL_LIB"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP"/>
-					<Add directory="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/include"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project"/>
+					<Add directory="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
@@ -97,130 +97,130 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="qt5project_autogen">
-				<Option working_dir="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug"/>
+				<Option working_dir="/home/lukas/CLionProjects/qt5project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project_autogen"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 qt5project_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lukas/CLionProjects/qt5project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/API.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/API.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/API.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTube.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTube.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTube.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/api/YouTubeToLink.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/api/YouTubeToLink.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/qt5project_autogen/mocs_compilation.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/ui_mainwindow.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/cmake-build-debug/ui_mainwindow.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/datatypes/Hashmap.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/Hashmap.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/datatypes/json.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/datatypes/json.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/download/DownloadManager.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/download/DownloadManager.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.h">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.h">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.ui">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/gui/mainwindow.ui">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/main.cpp">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/main.cpp">
 			<Option target="qt5project"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/CMakeLists.txt">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\"/>
 		</Unit>
-		<Unit filename="/home/lukas/CLionProjects/YouTubeDownloaderCPP/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake">
+		<Unit filename="/home/lukas/CLionProjects/qt5project/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\"/>
 		</Unit>
 	</Project>

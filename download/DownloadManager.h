@@ -13,6 +13,9 @@ public:
 
     void addActionListener(std::function<void()> test);
 
+    int getPercent();
+
+
 private:
     static size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
 

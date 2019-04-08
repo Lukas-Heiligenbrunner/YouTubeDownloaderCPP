@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->progressmanual->setMinimum(0);
     ui->progressmanual->setValue(10);
 
+    ui->infolabel->setText("currently is nothing to do");
+
     connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
 }
 
@@ -40,10 +42,16 @@ void MainWindow::startdownloadBtn() {
     std::cout << link <<" \n";
 
     DownloadManager manager;
-    manager.addActionListener([this](){
+
+    manager.onDownloadPercentChange([this]() {
         ui->progressmanual->setValue(ui->progressmanual->value() + 1);
         std::cout << "lambda function called...\n";
     });
+    manager.onFinishedListener([this](){
+        ui->infolabel->setText("finished downloading!");
+    });
+
+    ui->infolabel->setText("downloading");
     manager.downloadUrl(link,yttl.getFileName()+".mp3");
     std::cout  <<"finished downloading \n";
 }

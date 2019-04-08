@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -35,6 +36,8 @@ public:
     QLabel *label;
     QProgressBar *progressmanual;
     QLineEdit *textfieldname;
+    QLabel *infolabel;
+    QFrame *line;
     QWidget *tab;
     QStatusBar *statusbar;
 
@@ -58,11 +61,19 @@ public:
         label->setGeometry(QRect(90, 40, 171, 17));
         progressmanual = new QProgressBar(manualdownload);
         progressmanual->setObjectName(QStringLiteral("progressmanual"));
-        progressmanual->setGeometry(QRect(190, 220, 221, 23));
+        progressmanual->setGeometry(QRect(30, 220, 221, 23));
         progressmanual->setValue(24);
         textfieldname = new QLineEdit(manualdownload);
         textfieldname->setObjectName(QStringLiteral("textfieldname"));
         textfieldname->setGeometry(QRect(90, 70, 151, 25));
+        infolabel = new QLabel(manualdownload);
+        infolabel->setObjectName(QStringLiteral("infolabel"));
+        infolabel->setGeometry(QRect(320, 230, 411, 17));
+        line = new QFrame(manualdownload);
+        line->setObjectName(QStringLiteral("line"));
+        line->setGeometry(QRect(30, 170, 721, 16));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
         tabWidget->addTab(manualdownload, QString());
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
@@ -88,6 +99,7 @@ public:
 #endif // QT_NO_ACCESSIBILITY
         btndownloadmanul->setText(QApplication::translate("MainWindow", "Download", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "Bitte Liednamen eingeben", Q_NULLPTR));
+        infolabel->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(manualdownload), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Tab 1", Q_NULLPTR));
     } // retranslateUi

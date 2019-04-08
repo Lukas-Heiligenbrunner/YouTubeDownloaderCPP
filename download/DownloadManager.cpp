@@ -25,7 +25,7 @@ size_t DownloadManager::write_data(void *buffer, size_t size, size_t buffersize,
 
 
 void DownloadManager::downloadUrl(std::string url, std::string filename) {
-    std::thread thread = std::thread([url,filename] {
+    std::thread thread = std::thread([url,filename,this] {
 
 
         CURL *curl;
@@ -68,13 +68,15 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
             /* always cleanup */
             curl_easy_cleanup(curl);
             fclose(fp);
-            std::cout << "closed\n";
+//            this->fireFinishedEvent(); //TODO terminates application !?!?!?
+        } else{
+            //TODO fire error event
         }
     });
     thread.detach();
 }
 
-void DownloadManager::addActionListener(std::function<void()> test) {
+void DownloadManager::onDownloadPercentChange(std::function<void()> test) {
     listeners.push_back(test);
 }
 
@@ -87,4 +89,14 @@ void DownloadManager::fireEvent() {
 int DownloadManager::getPercent() {
     //TODO calc the percent of the downloaded file
     return 0;
+}
+
+void DownloadManager::onFinishedListener(std::function<void()> test) {
+    finishedlisteners.push_back(test);
+}
+
+void DownloadManager::fireFinishedEvent() {
+    for (int i = 0; i < finishedlisteners.size(); ++i) {
+        finishedlisteners.at(i)();
+    }
 }

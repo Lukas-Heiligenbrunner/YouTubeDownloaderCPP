@@ -140,6 +140,7 @@ CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
+CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/qt5project.dir/gui/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit

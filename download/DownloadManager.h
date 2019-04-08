@@ -11,7 +11,8 @@ class DownloadManager {
 public:
     void downloadUrl(std::string url, std::string filename);
 
-    void addActionListener(std::function<void()> test);
+    void onDownloadPercentChange(std::function<void()> test);
+    void onFinishedListener(std::function<void()> test);
 
     int getPercent();
 
@@ -21,6 +22,9 @@ private:
 
     static void fireEvent();
     static std::vector<std::function<void()>> listeners;
+
+    std::vector<std::function<void()>> finishedlisteners;
+    void fireFinishedEvent();
     static int loadedsize;
 };
 

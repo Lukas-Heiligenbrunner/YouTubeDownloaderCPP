@@ -53,4 +53,4 @@ add_executable(${TARGET} ${SOURCES} ${UI_GENERATED_HEADERS})
 # `target_link_libraries()` rather than `qt5_use_modules()` for CMake 2.8.11 or later
 # hint from [CMake & QT5 - QT5_WRAP_UI not generating ui header files](http://stackoverflow.com/questions/25875255/cmake-qt5-qt5-wrap-ui-not-generating-ui-header-files)
 #
-target_link_libraries(${TARGET} ${QT5_LIBRARIES} curl)
+target_link_libraries(${TARGET} ${QT5_LIBRARIES} curl -lpthread)

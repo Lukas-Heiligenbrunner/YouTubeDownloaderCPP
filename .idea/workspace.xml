@@ -16,33 +16,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="added github library to interpret json code&#10;added Youtubetolink class">
+    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="added callback for download change and crawling filename from youtube video.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/YouTubeToLink.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/api/YouTubeToLink.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/YouTubeToLink.h" beforeDir="false" afterPath="$PROJECT_DIR$/api/YouTubeToLink.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenOldSettings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenOldSettings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/qt5project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/qt5project.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download/DownloadManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/download/DownloadManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/DownloadManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/download/DownloadManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gui/mainwindow.cpp" afterDir="false" />
     </list>
     <ignored path="qt5project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -77,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="331">
+              <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
               <folding>
                 <element signature="e#40#57#0" expanded="true" />
               </folding>
@@ -93,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -101,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="424">
+              <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -215,12 +196,12 @@
         <option value="$PROJECT_DIR$/datatypes/Hashmap.h" />
         <option value="$PROJECT_DIR$/api/API.h" />
         <option value="$PROJECT_DIR$/api/API.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/download/DownloadManager.h" />
         <option value="$PROJECT_DIR$/api/YouTubeToLink.h" />
         <option value="$PROJECT_DIR$/api/YouTubeToLink.cpp" />
-        <option value="$PROJECT_DIR$/download/DownloadManager.cpp" />
         <option value="$PROJECT_DIR$/gui/mainwindow.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/download/DownloadManager.cpp" />
       </list>
     </option>
   </component>
@@ -394,11 +375,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554660927203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added callback for download change and crawling filename from youtube video.">
+      <created>1554740638535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554740638535</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41882000" />
+    <option name="totallyTimeSpent" value="43879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
@@ -409,16 +397,16 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4434365" visible="true" weight="0.33582887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.44023478" visible="true" weight="0.33582887" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32916668" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4381003" weight="0.31016043" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5565635" side_tool="true" visible="true" weight="0.33582887" />
-      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49733192" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.434365" weight="0.31016043" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5597652" side_tool="true" visible="true" weight="0.33582887" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4967983" weight="0.32834226" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -438,7 +426,8 @@
     <MESSAGE value="finished api post request" />
     <MESSAGE value="added youtube class for querying youtube" />
     <MESSAGE value="added github library to interpret json code&#10;added Youtubetolink class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added github library to interpret json code&#10;added Youtubetolink class" />
+    <MESSAGE value="added callback for download change and crawling filename from youtube video." />
+    <option name="LAST_COMMIT_MESSAGE" value="added callback for download change and crawling filename from youtube video." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/include/qt/QtWidgets/QMainWindow" />
@@ -560,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/x86_64-linux-gnu/curl/curl.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -591,29 +573,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="331">
+          <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
           <folding>
             <element signature="e#40#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

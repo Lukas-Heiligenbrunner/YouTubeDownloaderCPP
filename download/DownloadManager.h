@@ -11,7 +11,7 @@ class DownloadManager {
 public:
     void downloadUrl(std::string url, std::string filename);
 
-    void onDownloadPercentChange(std::function<void()> test);
+    void onDownloadPercentChange(std::function<void(int percent)> test);
     void onFinishedListener(std::function<void()> test);
 
     int getPercent();
@@ -20,10 +20,11 @@ public:
 private:
     static size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
 
-    static void fireEvent();
-    static std::vector<std::function<void()>> listeners;
 
-    std::vector<std::function<void()>> finishedlisteners;
+    static std::vector<std::function<void(int percent)>> listeners;
+    static std::vector<std::function<void()>> finishedlisteners;  //need to be static dont know why
+
+    static void firePercentEvent(int percent);
     void fireFinishedEvent();
     static int loadedsize;
 };

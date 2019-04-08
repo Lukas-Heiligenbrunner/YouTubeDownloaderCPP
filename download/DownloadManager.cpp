@@ -12,14 +12,16 @@
 #include <thread>
 
 int DownloadManager::loadedsize = 0;
-std::vector<std::function<void()>> DownloadManager::listeners;
+std::vector<std::function<void(int percent)>> DownloadManager::listeners;
+std::vector<std::function<void()>> DownloadManager::finishedlisteners;
 
 size_t DownloadManager::write_data(void *buffer, size_t size, size_t buffersize, FILE *stream) {
     size_t written = fwrite(buffer, size, buffersize, stream);
     //loadedsize+= sizeof(buffer);
     loadedsize += buffersize;
-    std::cout << loadedsize << "\n";
-    fireEvent();
+    //std::cout << loadedsize << "\n";
+    //TODO calculate percent
+    firePercentEvent(loadedsize);
     return written;
 }
 
@@ -68,7 +70,7 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
             /* always cleanup */
             curl_easy_cleanup(curl);
             fclose(fp);
-//            this->fireFinishedEvent(); //TODO terminates application !?!?!?
+            this->fireFinishedEvent(); //TODO terminates application !?!?!?
         } else{
             //TODO fire error event
         }
@@ -76,13 +78,13 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
     thread.detach();
 }
 
-void DownloadManager::onDownloadPercentChange(std::function<void()> test) {
+void DownloadManager::onDownloadPercentChange(std::function<void(int percent)> test) {
     listeners.push_back(test);
 }
 
-void DownloadManager::fireEvent() {
+void DownloadManager::firePercentEvent(int percent) {
     for (int i = 0; i < listeners.size(); ++i) {
-        listeners.at(i)();
+        listeners.at(i)(percent);
     }
 }
 

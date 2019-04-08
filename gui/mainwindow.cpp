@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->progressmanual->setValue(10);
 
     ui->infolabel->setText("currently is nothing to do");
+    ui->textfieldname->setText("hangover");
 
     connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
 }
@@ -43,12 +44,13 @@ void MainWindow::startdownloadBtn() {
 
     DownloadManager manager;
 
-    manager.onDownloadPercentChange([this]() {
+    manager.onDownloadPercentChange([this](int percent) {
         ui->progressmanual->setValue(ui->progressmanual->value() + 1);
-        std::cout << "lambda function called...\n";
+        //ui->infolabel->setText(QString::fromStdString(std::to_string(percent))); //TODO signal slot mechanism
     });
     manager.onFinishedListener([this](){
         ui->infolabel->setText("finished downloading!");
+        std::cout << "finished event triggered\n";
     });
 
     ui->infolabel->setText("downloading");

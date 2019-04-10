@@ -10,6 +10,13 @@
 
 class YouTubeToLink : API{
 private:
+    //----------------[ Methods ]--------------------//
+
+    /**
+     * get Downlodlink from youtube video id
+     * @param videoid  Youtube video ID
+     * @return direct Downloadlink
+     */
     std::string getDownloadLinkJson(std::string videoid);
 
     std::string filename;

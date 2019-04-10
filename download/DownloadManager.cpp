@@ -38,21 +38,6 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
         std::cout << url << "<<<< link\n";
 
         //TODO read somehow the filesize of the music file to download
-//        curl_off_t cl;
-//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
-//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
-//        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-//
-//        //curl_easy_setopt(curl, CURLOPT_HEADER, 1);
-//        curl_easy_setopt(curl, CURLOPT_NOBODY, 1);
-//
-//        curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &cl);
-//        res = curl_easy_perform(curl);
-//
-//        std::cout << "filesize is: " << cl << "\n";
-//
-//        curl = curl_easy_init();
-
 
         if (curl) {
             fp = fopen(filename.c_str(), "wb");
@@ -78,9 +63,10 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
     thread.detach();
 }
 
-void DownloadManager::onDownloadPercentChange(std::function<void(int percent)> test) {
-    listeners.push_back(test);
+void DownloadManager::onDownloadPercentChange(std::function<void(int percent)> listener) {
+    listeners.push_back(listener);
 }
+
 
 void DownloadManager::firePercentEvent(int percent) {
     for (int i = 0; i < listeners.size(); ++i) {
@@ -93,8 +79,8 @@ int DownloadManager::getPercent() {
     return 0;
 }
 
-void DownloadManager::onFinishedListener(std::function<void()> test) {
-    finishedlisteners.push_back(test);
+void DownloadManager::onFinishedListener(std::function<void()> listener) {
+    finishedlisteners.push_back(listener);
 }
 
 void DownloadManager::fireFinishedEvent() {

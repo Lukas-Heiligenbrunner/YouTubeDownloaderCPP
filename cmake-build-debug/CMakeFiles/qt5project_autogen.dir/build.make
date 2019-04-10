@@ -43,10 +43,10 @@ RM = /home/lukas/Downloads/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukas/CLionProjects/qt5project
+CMAKE_SOURCE_DIR = /home/lukas/CLionProjects/YouTubeDownloaderCPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukas/CLionProjects/qt5project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug
 
 # Utility rule file for qt5project_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/lukas/CLionProjects/qt5project/cmake-build-debug
 include CMakeFiles/qt5project_autogen.dir/progress.make
 
 CMakeFiles/qt5project_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target qt5project"
-	/home/lukas/Downloads/clion-2019.1/bin/cmake/linux/bin/cmake -E cmake_autogen /home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target qt5project"
+	/home/lukas/Downloads/clion-2019.1/bin/cmake/linux/bin/cmake -E cmake_autogen /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/AutogenInfo.cmake Debug
 
 qt5project_autogen: CMakeFiles/qt5project_autogen
 qt5project_autogen: CMakeFiles/qt5project_autogen.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/qt5project_autogen.dir/clean:
 .PHONY : CMakeFiles/qt5project_autogen.dir/clean
 
 CMakeFiles/qt5project_autogen.dir/depend:
-	cd /home/lukas/CLionProjects/qt5project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukas/CLionProjects/qt5project /home/lukas/CLionProjects/qt5project /home/lukas/CLionProjects/qt5project/cmake-build-debug /home/lukas/CLionProjects/qt5project/cmake-build-debug /home/lukas/CLionProjects/qt5project/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukas/CLionProjects/YouTubeDownloaderCPP /home/lukas/CLionProjects/YouTubeDownloaderCPP /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug /home/lukas/CLionProjects/YouTubeDownloaderCPP/cmake-build-debug/CMakeFiles/qt5project_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/qt5project_autogen.dir/depend
 

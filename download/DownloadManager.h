@@ -9,24 +9,60 @@
 
 class DownloadManager {
 public:
+    //-------------[ Methods ]----------------//
+
+    /**
+     * start new Download job
+     * @param url download link
+     * @param filename filename where to safe to
+     */
     void downloadUrl(std::string url, std::string filename);
 
-    void onDownloadPercentChange(std::function<void(int percent)> test);
+    /**
+     * add new percent changed listener to class
+     * @param listener
+     */
+    void onDownloadPercentChange(std::function<void(int percent)> listener);
+
+    /**
+     * add finished event listener to class
+     * @param listener
+     */
     void onFinishedListener(std::function<void()> test);
 
+    /**
+     * get the downloaded percents
+     * @return percent value
+     */
     int getPercent();
 
 
 private:
-    static size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
-
-
+    //-------------[ class variables ]----------------//
     static std::vector<std::function<void(int percent)>> listeners;
     static std::vector<std::function<void()>> finishedlisteners;  //need to be static dont know why
 
-    static void firePercentEvent(int percent);
-    void fireFinishedEvent();
     static int loadedsize;
+
+
+    //-------------[ Methods ]----------------//
+
+    /**
+     * fire all percent changed events
+     * @param percent the percents
+     */
+    static void firePercentEvent(int percent);
+
+    /**
+     * fire all finished events
+     */
+    void fireFinishedEvent();
+
+    //-------------[ Static methods ]----------------//
+    /**
+     * callback function for CURL
+     */
+    static size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream);
 };
 
 

@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->progressmanual->setMaximum(100);
     ui->progressmanual->setMinimum(0);
-    ui->progressmanual->setValue(10);
+    ui->progressmanual->setValue(0);
 
     ui->infolabel->setText("currently is nothing to do");
     ui->textfieldname->setText("hangover");

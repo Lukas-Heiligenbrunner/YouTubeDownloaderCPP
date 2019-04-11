@@ -38,6 +38,27 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
         std::cout << url << "<<<< link\n";
 
         //TODO read somehow the filesize of the music file to download
+//
+//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
+//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+
+
+//        curl_easy_setopt(curl, CURLOPT_HEADER, 1);
+//        curl_easy_setopt(curl, CURLOPT_NOBODY, 1);
+
+        double dResult;
+
+
+
+        curl_easy_perform(curl);
+
+        curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &dResult);
+
+
+
+        curl_easy_init();
+        std::cout << "size:: " << dResult << "\n";
 
         if (curl) {
             fp = fopen(filename.c_str(), "wb");

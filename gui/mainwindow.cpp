@@ -21,6 +21,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->textfieldname->setText("hangover");
 
     connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
+    connect(this,SIGNAL(setInfoLabelText(QString)),ui->infolabel,SLOT(setText(QString)));
+    connect(this,SIGNAL(setProgressBarValue(int)),ui->progressmanual,SLOT(setValue(int)));
 }
 
 MainWindow::~MainWindow() {
@@ -45,8 +47,8 @@ void MainWindow::startdownloadBtn() {
     DownloadManager manager;
 
     manager.onDownloadPercentChange([this](int percent) {
-        ui->progressmanual->setValue(ui->progressmanual->value() + 1);
-        //ui->infolabel->setText(QString::fromStdString(std::to_string(percent))); //TODO signal slot mechanism
+        setProgressBarValue(ui->progressmanual->value()+1); //TODO
+        setInfoLabelText(QString::fromStdString(std::to_string(percent)));
     });
     manager.onFinishedListener([this](){
         ui->infolabel->setText("finished downloading!");

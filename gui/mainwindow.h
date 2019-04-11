@@ -19,6 +19,9 @@ private:
     Ui::MainWindow *ui;
 private slots:
     void startdownloadBtn();
+signals:
+    void setInfoLabelText(QString);
+    void setProgressBarValue(int);
 };
 
 #endif // MAINWINDOW_H

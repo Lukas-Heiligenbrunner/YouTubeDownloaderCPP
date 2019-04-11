@@ -36,26 +36,6 @@ string
 datatypes/Hashmap.h
 -
 
-/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.cpp
-string
--
-curl/curl.h
--
-iostream
--
-vector
--
-functional
--
-DownloadManager.h
-/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
-thread
--
-
-/home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
-functional
--
-
 /home/lukas/CLionProjects/YouTubeDownloaderCPP/gui/mainwindow.cpp
 iostream
 -

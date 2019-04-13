@@ -9,6 +9,8 @@
 #include <functional>
 #include "DownloadManager.h"
 
+#include <boost/regex.hpp>
+
 #include <thread>
 
 int DownloadManager::loadedsize = 0;
@@ -25,7 +27,6 @@ size_t DownloadManager::write_data(void *buffer, size_t size, size_t buffersize,
     return written;
 }
 
-
 void DownloadManager::downloadUrl(std::string url, std::string filename) {
     std::thread thread = std::thread([url,filename,this] {
 
@@ -39,16 +40,16 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
 
         //TODO read somehow the filesize of the music file to download
 //
-//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
-//        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 
+        curl_easy_setopt(curl, CURLOPT_NOBODY, 1);
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1);
+        curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, NULL);
+        curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 500);
 
-//        curl_easy_setopt(curl, CURLOPT_HEADER, 1);
-//        curl_easy_setopt(curl, CURLOPT_NOBODY, 1);
-
-        double dResult;
-
+        int dResult;
 
 
         curl_easy_perform(curl);
@@ -57,7 +58,7 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
 
 
 
-        curl_easy_init();
+        curl = curl_easy_init();
         std::cout << "size:: " << dResult << "\n";
 
         if (curl) {

@@ -19,6 +19,8 @@ functional
 -
 DownloadManager.h
 /home/lukas/CLionProjects/YouTubeDownloaderCPP/download/DownloadManager.h
+boost/regex.hpp
+-
 thread
 -
 

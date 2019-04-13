@@ -16,10 +16,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="tried to read out content length of request">
+    <list default="true" id="5c7fb2c8-2b7b-4896-8405-843701f4630d" name="Default" comment="fixed code to get filesize of file before downloading it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qt5project.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download/DownloadManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/download/DownloadManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download/DownloadManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/download/DownloadManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gui/mainwindow.cpp" afterDir="false" />
     </list>
     <ignored path="qt5project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,19 +45,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui/mainwindow.h">
+        <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="570">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/mainwindow.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="451">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="e#40#57#0" expanded="true" />
               </folding>
@@ -67,16 +81,16 @@
         <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -184,9 +198,9 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/api/YouTubeToLink.h" />
         <option value="$PROJECT_DIR$/gui/mainwindow.h" />
+        <option value="$PROJECT_DIR$/download/DownloadManager.h" />
         <option value="$PROJECT_DIR$/gui/mainwindow.cpp" />
         <option value="$PROJECT_DIR$/download/DownloadManager.cpp" />
-        <option value="$PROJECT_DIR$/download/DownloadManager.h" />
       </list>
     </option>
   </component>
@@ -298,7 +312,7 @@
       <workItem from="1554908425457" duration="19000" />
       <workItem from="1554959775272" duration="2522000" />
       <workItem from="1555008711002" duration="1437000" />
-      <workItem from="1555159510298" duration="1464000" />
+      <workItem from="1555159510298" duration="2558000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1554551336200</created>
@@ -391,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555010114491</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed code to get filesize of file before downloading it">
+      <created>1555161043775</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555161043778</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55890000" />
+    <option name="totallyTimeSpent" value="56984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
@@ -406,15 +427,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4194237" visible="true" weight="0.33582887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.40928495" visible="true" weight="0.33582887" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" weight="0.32916668" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.41462114" weight="0.31016043" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4044824" weight="0.31016043" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5805763" side_tool="true" visible="true" weight="0.33582887" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.59071505" side_tool="true" visible="true" weight="0.33582887" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4967983" weight="0.32834226" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -440,7 +461,8 @@
     <MESSAGE value="added some method comments to downloadmanager" />
     <MESSAGE value="added signal and slot mechanism for setting info text and progressbar" />
     <MESSAGE value="tried to read out content length of request" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried to read out content length of request" />
+    <MESSAGE value="fixed code to get filesize of file before downloading it" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed code to get filesize of file before downloading it" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/include/qt/QtWidgets/QMainWindow" />
@@ -526,23 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/mainwindow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/API.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -603,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/boost/regex/v4/regex_search.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -624,20 +622,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
+    <entry file="file://$PROJECT_DIR$/api/YouTubeToLink.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="e#40#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/mainwindow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/download/DownloadManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/mainwindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download/DownloadManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

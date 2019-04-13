@@ -30,14 +30,10 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::startdownloadBtn() {
-    std::cout << "buttton clicked!\n";
-    ui->progressmanual->setValue(ui->progressmanual->value() + 1);
-    std::string searchtext = ui->textfieldname->text().toStdString();
-    std::cout << searchtext << " <<<  \n\n";
     std::cout << "starting downloading\n\n";
 
     YouTube youtube;
-    std::string id = youtube.firstResultID(searchtext);
+    std::string id = youtube.firstResultID(ui->textfieldname->text().toStdString());
     std::cout << id <<" \n";
 
     YouTubeToLink yttl;
@@ -46,8 +42,8 @@ void MainWindow::startdownloadBtn() {
 
     DownloadManager manager;
 
-    manager.onDownloadPercentChange([this](int percent) {
-        setProgressBarValue(ui->progressmanual->value()+1); //TODO
+    manager.onDownloadPercentChange([this](double percent) {
+        setProgressBarValue((int)percent);
         setInfoLabelText(QString::fromStdString(std::to_string(percent)));
     });
     manager.onFinishedListener([this](){

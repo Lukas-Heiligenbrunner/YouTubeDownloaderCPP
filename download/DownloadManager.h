@@ -22,7 +22,7 @@ public:
      * add new percent changed listener to class
      * @param listener
      */
-    void onDownloadPercentChange(std::function<void(int percent)> listener);
+    void onDownloadPercentChange(std::function<void(double percent)> listener);
 
     /**
      * add finished event listener to class
@@ -34,15 +34,16 @@ public:
      * get the downloaded percents
      * @return percent value
      */
-    int getPercent();
+    double getPercent();
 
 
 private:
     //-------------[ class variables ]----------------//
-    static std::vector<std::function<void(int percent)>> listeners;
+    static std::vector<std::function<void(double percent)>> listeners;
     static std::vector<std::function<void()>> finishedlisteners;  //need to be static dont know why
 
     static int loadedsize;
+    static int totalfilesize;
 
 
     //-------------[ Methods ]----------------//
@@ -51,7 +52,7 @@ private:
      * fire all percent changed events
      * @param percent the percents
      */
-    static void firePercentEvent(int percent);
+    static void firePercentEvent(double percent);
 
     /**
      * fire all finished events

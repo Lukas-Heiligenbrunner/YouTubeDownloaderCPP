@@ -9,37 +9,33 @@
 #include <functional>
 #include "DownloadManager.h"
 
-#include <boost/regex.hpp>
-
 #include <thread>
 
 int DownloadManager::loadedsize = 0;
-std::vector<std::function<void(int percent)>> DownloadManager::listeners;
+int DownloadManager::totalfilesize = 0;
+std::vector<std::function<void(double percent)>> DownloadManager::listeners;
 std::vector<std::function<void()>> DownloadManager::finishedlisteners;
 
 size_t DownloadManager::write_data(void *buffer, size_t size, size_t buffersize, FILE *stream) {
     size_t written = fwrite(buffer, size, buffersize, stream);
-    //loadedsize+= sizeof(buffer);
     loadedsize += buffersize;
-    //std::cout << loadedsize << "\n";
-    //TODO calculate percent
-    firePercentEvent(loadedsize);
+
+    double percent = (double) loadedsize * 100 / (double) totalfilesize;
+    firePercentEvent(percent);
     return written;
 }
 
 void DownloadManager::downloadUrl(std::string url, std::string filename) {
-    std::thread thread = std::thread([url,filename,this] {
+    std::thread thread = std::thread([url, filename, this] {
 
 
         CURL *curl;
         FILE *fp;
         CURLcode res;
+        loadedsize = 0;
+        totalfilesize = 0;
         curl = curl_easy_init();
-        std::cout << "inited\n";
-        std::cout << url << "<<<< link\n";
 
-        //TODO read somehow the filesize of the music file to download
-//
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
@@ -49,17 +45,13 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
         curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, NULL);
         curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 500);
 
-        int dResult;
-
 
         curl_easy_perform(curl);
 
-        curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &dResult);
-
-
+        curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &totalfilesize);
 
         curl = curl_easy_init();
-        std::cout << "size:: " << dResult << "\n";
+        std::cout << "size:: " << totalfilesize << "\n";
 
         if (curl) {
             fp = fopen(filename.c_str(), "wb");
@@ -77,28 +69,27 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
             /* always cleanup */
             curl_easy_cleanup(curl);
             fclose(fp);
-            this->fireFinishedEvent(); //TODO terminates application !?!?!?
-        } else{
+            this->fireFinishedEvent();
+        } else {
             //TODO fire error event
         }
     });
     thread.detach();
 }
 
-void DownloadManager::onDownloadPercentChange(std::function<void(int percent)> listener) {
+void DownloadManager::onDownloadPercentChange(std::function<void(double percent)> listener) {
     listeners.push_back(listener);
 }
 
 
-void DownloadManager::firePercentEvent(int percent) {
+void DownloadManager::firePercentEvent(double percent) {
     for (int i = 0; i < listeners.size(); ++i) {
         listeners.at(i)(percent);
     }
 }
 
-int DownloadManager::getPercent() {
-    //TODO calc the percent of the downloaded file
-    return 0;
+double DownloadManager::getPercent() {
+    return (double) loadedsize * 100 / (double) totalfilesize;
 }
 
 void DownloadManager::onFinishedListener(std::function<void()> listener) {

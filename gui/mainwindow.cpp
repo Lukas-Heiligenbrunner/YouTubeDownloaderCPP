@@ -5,6 +5,9 @@
 #include <api/YouTubeToLink.h>
 #include <download/DownloadManager.h>
 
+#include <math.h>
+#include <sstream>
+
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -21,8 +24,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->textfieldname->setText("hangover");
 
     connect(ui->btndownloadmanul, SIGNAL(clicked()), this, SLOT(startdownloadBtn()));
-    connect(this,SIGNAL(setInfoLabelText(QString)),ui->infolabel,SLOT(setText(QString)));
-    connect(this,SIGNAL(setProgressBarValue(int)),ui->progressmanual,SLOT(setValue(int)));
+    connect(this, SIGNAL(setInfoLabelText(QString)), ui->infolabel, SLOT(setText(QString)));
+    connect(this, SIGNAL(setProgressBarValue(int)), ui->progressmanual, SLOT(setValue(int)));
 }
 
 MainWindow::~MainWindow() {
@@ -34,24 +37,28 @@ void MainWindow::startdownloadBtn() {
 
     YouTube youtube;
     std::string id = youtube.firstResultID(ui->textfieldname->text().toStdString());
-    std::cout << id <<" \n";
+    std::cout << id << " \n";
 
     YouTubeToLink yttl;
     std::string link = yttl.getDownloadLink(id);
-    std::cout << link <<" \n";
+    std::cout << link << " \n";
 
     DownloadManager manager;
 
-    manager.onDownloadPercentChange([this](double percent) {
-        setProgressBarValue((int)percent);
-        setInfoLabelText(QString::fromStdString(std::to_string(percent)));
+    manager.onDownloadPercentChange([&manager, this](double percent) {
+        setProgressBarValue((int) percent);
+        std::stringstream infotext;
+//        infotext << std::to_string(std::setpreci(manager.getLoadedBytes()/(1024*100)/10)) << " MB /" << std::to_string(((float)manager.getTotalbytes()/(1024*100))/10) << " MB"; //std::to_string(percent)
+//        infotext.prec
+//TODO!!!!
+       // setInfoLabelText(QString::fromStdString(infotext));
     });
-    manager.onFinishedListener([this](){
+    manager.onFinishedListener([this]() {
         ui->infolabel->setText("finished downloading!");
         std::cout << "finished event triggered\n";
     });
 
     ui->infolabel->setText("downloading");
-    manager.downloadUrl(link,yttl.getFileName()+".mp3");
-    std::cout  <<"finished downloading \n";
+    manager.downloadUrl(link, yttl.getFileName() + ".mp3");
+    std::cout << "finished downloading \n";
 }

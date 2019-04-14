@@ -36,6 +36,10 @@ public:
      */
     double getPercent();
 
+    int getLoadedBytes();
+    int getTotalbytes();
+
+
 
 private:
     //-------------[ class variables ]----------------//
@@ -48,10 +52,7 @@ private:
 
     //-------------[ Methods ]----------------//
 
-    /**
-     * fire all percent changed events
-     * @param percent the percents
-     */
+
     static void firePercentEvent(double percent);
 
     /**

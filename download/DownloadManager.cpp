@@ -13,6 +13,7 @@
 
 int DownloadManager::loadedsize = 0;
 int DownloadManager::totalfilesize = 0;
+
 std::vector<std::function<void(double percent)>> DownloadManager::listeners;
 std::vector<std::function<void()>> DownloadManager::finishedlisteners;
 
@@ -34,6 +35,8 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
         CURLcode res;
         loadedsize = 0;
         totalfilesize = 0;
+
+        //download header informations
         curl = curl_easy_init();
 
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
@@ -45,12 +48,12 @@ void DownloadManager::downloadUrl(std::string url, std::string filename) {
         curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, NULL);
         curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 500);
 
-
         curl_easy_perform(curl);
 
         curl_easy_getinfo(curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, &totalfilesize);
 
-        curl = curl_easy_init();
+        //download file
+        curl =curl_easy_init();
         std::cout << "size:: " << totalfilesize << "\n";
 
         if (curl) {
@@ -100,4 +103,12 @@ void DownloadManager::fireFinishedEvent() {
     for (int i = 0; i < finishedlisteners.size(); ++i) {
         finishedlisteners.at(i)();
     }
+}
+
+int DownloadManager::getLoadedBytes() {
+    return loadedsize;
+}
+
+int DownloadManager::getTotalbytes() {
+    return totalfilesize;
 }

@@ -1,13 +1,12 @@
 #include <iostream>
-#include <api/API.h>
+
 #include <datatypes/Hashmap.h>
+
+#include <api/API.h>
 #include <api/YouTube.h>
 #include <api/YouTubeToLink.h>
+
 #include <download/DownloadManager.h>
-
-#include <math.h>
-#include <sstream>
-
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -47,11 +46,9 @@ void MainWindow::startdownloadBtn() {
 
     manager.onDownloadPercentChange([&manager, this](double percent) {
         setProgressBarValue((int) percent);
-        std::stringstream infotext;
-//        infotext << std::to_string(std::setpreci(manager.getLoadedBytes()/(1024*100)/10)) << " MB /" << std::to_string(((float)manager.getTotalbytes()/(1024*100))/10) << " MB"; //std::to_string(percent)
-//        infotext.prec
-//TODO!!!!
-       // setInfoLabelText(QString::fromStdString(infotext));
+        std::string infotext;
+        infotext = std::to_string(manager.getLoadedBytes()/1024) + " / " + std::to_string(manager.getTotalbytes()/1024) +  " kbytes\n";
+        setInfoLabelText(QString::fromStdString(infotext));
     });
     manager.onFinishedListener([this]() {
         ui->infolabel->setText("finished downloading!");
